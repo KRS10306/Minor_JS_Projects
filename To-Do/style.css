@@ -1,0 +1,112 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Todo App Container */
+.todo-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Header */
+.todo-header {
+    background: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Input Section */
+.todo-input {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.todo-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.todo-input textarea{
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.todo-input button {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.todo-input button:hover {
+    background: #45a049;
+}
+
+/* Todo List */
+.todo-list {
+    list-style: none;
+    padding: 15px;
+}
+
+.todo-list li {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 4px;
+    align-items: center;
+    border: 1px solid #ddd;
+}
+
+/* Delete Button */
+.todo-list li button {
+    background: #f44336;
+    position: sticky;
+    left: 90%;
+    color: white;
+    border: none;
+    padding: 9px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.todo-list li button:hover {
+    background: #e53935;
+}
+
+.todo-list li span{
+    display: inline-block;
+    max-width: 500px; /* Set the maximum width */
+    word-wrap: break-word; /* Breaks words that exceed the width */
+}

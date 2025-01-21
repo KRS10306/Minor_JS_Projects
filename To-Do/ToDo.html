@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="todo-container">
+        <header class="todo-header">
+            <h1>Todo App</h1>
+        </header>
+        <div class="todo-input">
+            <input type="text" id="todo-input-heading" placeholder="Name of the Task">
+        </div>
+        <div class="todo-input">
+            <!-- <input type="text" id="todo-input-text" placeholder="Add a new task..."> -->
+             <textarea name="" id="todo-input-text" placeholder="Add a new task..."></textarea>
+            <button id="add-todo-btn" onclick="Add()">Add</button>
+        </div>
+        <ul class="todo-list" id="todo-list">
+            <!-- Todo items will be dynamically added here -->
+        </ul>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
